@@ -1,0 +1,8 @@
+version: "3.4"
+
+services:
+  exam1:
+    image: exam1
+    build:
+      context: .
+      dockerfile: ./Dockerfile

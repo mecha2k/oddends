@@ -1,0 +1,13 @@
+version: "3.0"
+
+services:
+  exam1_svc:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    image: myapache
+    ports: 
+      - 80:80
+    restart: always
+    volumes:
+      - /var/www:/var/www
